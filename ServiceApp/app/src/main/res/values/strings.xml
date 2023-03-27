@@ -11,7 +11,7 @@
     <string name="food">Mess</string>
     <string name="room">Room Service</string>
     <string name="home">Home</string>
-    <string name="lost_or_found">Lost or Found</string>
+    <string name="lost">Lost</string>
     <string name="profile">Profile</string>
     <string name="roomno">Room No.</string>
     <string name="history">History</string>
@@ -30,8 +30,22 @@
     <string name="mess_complaint">Mess Complaint</string>
     <string name="drinking_water_complaint">Drinking Water Complaint</string>
     <string name="any_other_complaint">Any Other Complaint</string>
-    <string name="title_activity_lost_found">LostFound</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_name">My Name</string>
+    <string name="my_mail">My Mail</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="logout">Logout</string>
+    <string name="description_of_item">Description of Item</string>
+    <string name="item">Item</string>
+    <string name="where_s_my_thing">Where\'s My Thing</string>
+    <string name="my_service">My Service</string>
+    <string name="complaint_date">Complaint Date - </string>
+    <string name="status">Status - </string>
+    <string name="date">Date - </string>
+    <string name="pending">Pending</string>
+    <string name="datenew">12/12/2023</string>
+    <string name="my_complaints">My Complaints</string>
 
 </resources>

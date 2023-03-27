@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ public class ComplaintMess extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_complaintmess);
 
         b=findViewById(R.id.back);
@@ -43,8 +46,9 @@ public class ComplaintMess extends AppCompatActivity {
                 String prblm = problem.getText().toString();
 
                 if(prblm.isEmpty()) {
-                    Toast.makeText(ComplaintMess.this, "Give Info", Toast.LENGTH_SHORT).show();
+                    problem.setError("This Field is Mandatory");
                 }
+
                 else{
                     Toast.makeText(ComplaintMess.this, "Service Registered", Toast.LENGTH_SHORT).show();
                 }

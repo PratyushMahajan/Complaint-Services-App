@@ -96,6 +96,7 @@
 
                         <View
                             android:layout_width="39dp"
+                            android:id="@+id/go"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="3dp"
                             android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
@@ -549,6 +550,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navbarmenu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

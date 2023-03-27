@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_baseline_home_24"
         android:id="@+id/homepage" />
 
-    <item android:title="@string/lost_or_found"
+    <item android:title="@string/lost"
         android:icon="@drawable/ic_baseline_add_reaction_24"
         android:id="@+id/lostfound"/>
 

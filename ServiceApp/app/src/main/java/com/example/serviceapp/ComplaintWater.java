@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class ComplaintWater extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_complaintwater);
 
         b=findViewById(R.id.back);
@@ -45,9 +48,13 @@ public class ComplaintWater extends AppCompatActivity {
                 String room = roomno.getText().toString();
                 String prblm = problem.getText().toString();
 
-                if((room.isEmpty() ) || (prblm.isEmpty())) {
-                    Toast.makeText(ComplaintWater.this, "Give Info", Toast.LENGTH_SHORT).show();
+                if(room.isEmpty() ) {
+                    roomno.setError("This Field is Mandatory");
                 }
+                if(prblm.isEmpty()) {
+                    problem.setError("This Field is Mandatory");
+                }
+
                 else{
                     Toast.makeText(ComplaintWater.this, "Service Registered", Toast.LENGTH_SHORT).show();
                 }

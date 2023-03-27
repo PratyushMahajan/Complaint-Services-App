@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ComplaintMess"
-    android:background="@drawable/bg_gradient5">
+    android:background="@drawable/bgpic3">
 
     <View
         android:id="@+id/hist"
