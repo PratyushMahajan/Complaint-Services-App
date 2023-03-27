@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ServiceApp</string>
+    <string name="welcome">Welcome! 😃</string>
+    <string name="name">Pratyush Mahajan</string>
+    <string name="service">Choose Service</string>
+    <string name="complaint">Any Complaints ?</string>
+    <string name="wifi">Wifi</string>
+    <string name="plumber">Plumber</string>
+    <string name="elctric">Electrician</string>
+    <string name="carp">Carpenter</string>
+    <string name="food">Mess</string>
+    <string name="room">Room Service</string>
+    <string name="home">Home</string>
+    <string name="lost_or_found">Lost or Found</string>
+    <string name="profile">Profile</string>
+    <string name="roomno">Room No.</string>
+    <string name="history">History</string>
+    <string name="info">Provide Information</string>
+    <string name="prblm">Problem</string>
+    <string name="submit">Submit</string>
+    <string name="wifi_service">Wifi Service</string>
+    <string name="show_my_complaints">Show my Complaints</string>
+    <string name="drinking_water">Drinking Water</string>
+    <string name="others">Others</string>
+    <string name="carpenter_service">Carpenter Service</string>
+    <string name="bed">Bed (A/B/C/D)</string>
+    <string name="electrician_service">Electrician Service</string>
+    <string name="plumber_service">Plumber Service</string>
+    <string name="washroom">Washroom No.</string>
+    <string name="mess_complaint">Mess Complaint</string>
+    <string name="drinking_water_complaint">Drinking Water Complaint</string>
+    <string name="any_other_complaint">Any Other Complaint</string>
+    <string name="title_activity_lost_found">LostFound</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+</resources>
