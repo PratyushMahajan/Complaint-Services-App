@@ -63,6 +63,13 @@ public class DetailsPlumber extends AppCompatActivity {
                 }
             }
         });
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(DetailsPlumber.this,History.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

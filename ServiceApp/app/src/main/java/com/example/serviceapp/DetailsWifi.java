@@ -39,6 +39,13 @@ public class DetailsWifi extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailsWifi.this,History.class);
+                startActivity(intent);
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

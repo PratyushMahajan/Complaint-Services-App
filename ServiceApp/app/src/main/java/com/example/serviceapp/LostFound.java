@@ -67,6 +67,12 @@ public class LostFound extends AppCompatActivity {
             myClickItem(item);
             return true;
         });
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(LostFound.this,History.class);
+            }
+        });
 
     }
     public void myClickItem(MenuItem item) {

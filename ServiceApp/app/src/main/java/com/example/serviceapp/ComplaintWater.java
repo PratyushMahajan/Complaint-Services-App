@@ -60,5 +60,12 @@ public class ComplaintWater extends AppCompatActivity {
                 }
             }
         });
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(ComplaintWater.this,History.class);
+                startActivity(intent);
+            }
+        });
     }
 }

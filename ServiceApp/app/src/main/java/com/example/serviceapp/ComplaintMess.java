@@ -39,6 +39,14 @@ public class ComplaintMess extends AppCompatActivity {
             }
         });
 
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(ComplaintMess.this,History.class);
+                startActivity(intent);
+            }
+        });
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
