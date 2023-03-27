@@ -78,7 +78,7 @@ public class LostFound extends AppCompatActivity {
     public void myClickItem(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.homepage:
-                Intent intent = new Intent(LostFound.this, MainActivity.class);
+                Intent intent = new Intent(LostFound.this, Dashboard.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 finish();

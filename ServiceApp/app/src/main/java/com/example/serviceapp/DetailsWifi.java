@@ -35,7 +35,7 @@ public class DetailsWifi extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsWifi.this, MainActivity.class);
+                Intent intent = new Intent(DetailsWifi.this, Dashboard.class);
                 startActivity(intent);
             }
         });

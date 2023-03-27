@@ -36,7 +36,7 @@ public class ComplaintRoomService extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ComplaintRoomService.this, MainActivity.class);
+                Intent intent = new Intent(ComplaintRoomService.this, Dashboard.class);
                 startActivity(intent);
             }
         });

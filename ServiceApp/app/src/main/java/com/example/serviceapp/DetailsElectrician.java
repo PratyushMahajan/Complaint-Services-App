@@ -37,7 +37,7 @@ public class DetailsElectrician extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsElectrician.this, MainActivity.class);
+                Intent intent = new Intent(DetailsElectrician.this, Dashboard.class);
                 startActivity(intent);
             }
         });

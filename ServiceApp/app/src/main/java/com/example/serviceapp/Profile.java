@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -33,7 +32,7 @@ public class Profile extends AppCompatActivity {
     public void myClickItem(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.homepage:
-                Intent intent = new Intent(Profile.this, MainActivity.class);
+                Intent intent = new Intent(Profile.this, Dashboard.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 finish();

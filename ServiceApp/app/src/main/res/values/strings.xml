@@ -47,5 +47,9 @@
     <string name="pending">Pending</string>
     <string name="datenew">12/12/2023</string>
     <string name="my_complaints">My Complaints</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="email2">Email</string>
 
 </resources>

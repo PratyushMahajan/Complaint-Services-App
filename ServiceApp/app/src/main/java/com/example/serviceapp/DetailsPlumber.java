@@ -36,7 +36,7 @@ public class DetailsPlumber extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsPlumber.this, MainActivity.class);
+                Intent intent = new Intent(DetailsPlumber.this, Dashboard.class);
                 startActivity(intent);
             }
         });
