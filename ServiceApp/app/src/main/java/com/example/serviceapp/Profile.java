@@ -5,13 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Profile extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    Button b;
+    View edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,25 @@ public class Profile extends AppCompatActivity {
             myClickItem(item);
             return true;
         });
+        b=findViewById(R.id.button2);
+        edit=findViewById(R.id.view2);
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, LoginActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                Toast.makeText(Profile.this, "Logged Out", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+//        edit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
     }
     public void myClickItem(MenuItem item) {

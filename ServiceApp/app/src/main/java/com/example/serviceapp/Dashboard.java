@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -114,6 +115,7 @@ public class Dashboard extends AppCompatActivity {
                 Intent intent = new Intent(Dashboard.this, LoginActivity.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
+                Toast.makeText(Dashboard.this, "Logged Out", Toast.LENGTH_SHORT).show();
             }
         });
 

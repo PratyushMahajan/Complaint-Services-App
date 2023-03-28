@@ -17,11 +17,11 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/roboto"
-        android:letterSpacing="0.05"
         android:gravity="center"
-        android:text="@string/create_account"
+        android:letterSpacing="0.05"
+        android:text="CREATE ACCOUNT"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="28dp"
         android:textStyle="bold" />
 
     <EditText
@@ -122,33 +122,33 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signupbtn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@id/cpassword"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="117dp"
         android:backgroundTint="@color/purple_200"
         android:fontFamily="@font/roboto"
-        android:text="Signup"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:cornerRadius="50dp" />
 
     <TextView
         android:id="@+id/loginbtn"
-        android:layout_width="match_parent"
+        android:layout_width="309dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/signupbtn"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-154dp"
-        android:layout_marginBottom="78dp"
+        android:layout_marginStart="-225dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="54dp"
         android:layout_toEndOf="@+id/signupbtn"
         android:fontFamily="@font/roboto"
-        android:text="Already have an Account?"
+        android:gravity="center"
         android:letterSpacing="0.05"
+        android:text="@string/already_have_an_account"
         android:textColor="@color/black"
-        android:textSize="14dp"
-        android:textStyle="bold" />
+        android:textSize="14sp" />
 </RelativeLayout>
