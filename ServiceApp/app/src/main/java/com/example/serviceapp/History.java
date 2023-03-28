@@ -41,8 +41,12 @@ public class History extends AppCompatActivity {
         a.add(new historyClass("Wifi Service","13/03/2023","Pending"));
         a.add(new historyClass("Wifi Service","13/03/2023","Pending"));
         a.add(new historyClass("Wifi Service","13/03/2023","Pending"));
+
+
         CustomAdapter ca=new CustomAdapter(History.this,R.layout.listview,a);
         ls.setAdapter(ca);
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             myClickItem(item);

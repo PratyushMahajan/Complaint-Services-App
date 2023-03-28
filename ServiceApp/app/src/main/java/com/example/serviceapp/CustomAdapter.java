@@ -1,5 +1,6 @@
 package com.example.serviceapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,6 +63,9 @@ public class CustomAdapter extends ArrayAdapter<historyClass> {
         holder.service.setText(rclass.getService());
         holder.status.setText(rclass.getStatus());
         holder.date.setText(rclass.getDate());
+        
         return convertView;
+
+
     }
 }
