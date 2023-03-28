@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Profile extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-
+    Button Logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,16 @@ public class Profile extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.profile);
+        Logout = findViewById(R.id.button2);
+
+        Logout.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Profile.this,LoginActivity.class);
+                startActivity(i);
+            }
+        });
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             myClickItem(item);
@@ -29,7 +41,8 @@ public class Profile extends AppCompatActivity {
         });
 
     }
-    public void myClickItem(MenuItem item) {
+    public void myClickItem(MenuItem item)
+    {
         switch (item.getItemId()) {
             case R.id.homepage:
                 Intent intent = new Intent(Profile.this, Dashboard.class);
@@ -59,7 +72,5 @@ public class Profile extends AppCompatActivity {
                 finish();
                 break;
         }
-
     }
-
 }

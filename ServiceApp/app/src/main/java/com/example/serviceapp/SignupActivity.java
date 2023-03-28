@@ -70,7 +70,8 @@ public class SignupActivity extends AppCompatActivity
                     Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }
-                else {
+                else
+                {
                     cpassword.setError("Check Password");
                 }
             }
